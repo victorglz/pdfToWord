@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文档转换工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>文档转换工具</h1>
+        
+        <div class="conversion-section">
+            <h2>PDF 转 Word</h2>
+            <div class="upload-area" id="pdfUploadArea">
+                <svg class="upload-icon" viewBox="0 0 24 24">
+                    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                </svg>
+                <p>点击或拖拽PDF文件到这里</p>
+                <input type="file" id="pdfInput" accept=".pdf" hidden>
+            </div>
+            <button id="convertToWord" disabled>转换为Word</button>
+            <div class="progress-info" id="pdfProgress"></div>
+        </div>
+
+        <div class="conversion-section">
+            <h2>Word 转 PDF</h2>
+            <div class="upload-area" id="wordUploadArea">
+                <svg class="upload-icon" viewBox="0 0 24 24">
+                    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                </svg>
+                <p>点击或拖拽Word文件到这里</p>
+                <input type="file" id="wordInput" accept=".doc,.docx" hidden>
+            </div>
+            <button id="convertToPdf" disabled>转换为PDF</button>
+            <div class="progress-info" id="wordProgress"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

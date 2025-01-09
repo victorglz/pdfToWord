@@ -1,0 +1,10 @@
+document-converter/
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+├── backend/
+│   ├── app.py
+│   ├── requirements.txt
+│   └── uploads/
+└── README.md 
